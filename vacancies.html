@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вакансии - ПроЗарплата</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root{--primary:#1a3a52;--secondary:#d4af37;--accent:#2c5f7c;--text:#2d3436;--text-light:#636e72;--bg:#fafbfc;--white:#ffffff;--shadow:rgba(0,0,0,0.08)}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'IBM Plex Sans',sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+        nav{position:fixed;top:0;width:100%;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);z-index:1000;box-shadow:0 2px 20px var(--shadow)}
+        .nav-container{max-width:1400px;margin:0 auto;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center}
+        .logo{display:flex;align-items:center;gap:0.75rem;font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--primary);text-decoration:none}
+        .logo-icon{width:40px;height:40px;background:linear-gradient(135deg,var(--primary),var(--accent));border-radius:8px;display:flex;align-items:center;justify-content:center;color:white;font-weight:bold;font-size:1.2rem}
+        .nav-links{display:flex;gap:2rem;list-style:none}
+        .nav-links a{color:var(--text);text-decoration:none;font-weight:500;transition:color 0.3s ease}
+        .nav-links a:hover{color:var(--accent)}
+        .page-header{margin-top:80px;background:linear-gradient(135deg,var(--primary),var(--accent));color:white;padding:4rem 2rem;text-align:center}
+        .page-header h1{font-family:'Playfair Display',serif;font-size:3rem;margin-bottom:1rem}
+        .content{max-width:1200px;margin:4rem auto;padding:0 2rem}
+        .card{background:white;padding:2rem;margin-bottom:2rem;border-radius:12px;box-shadow:0 4px 20px var(--shadow)}
+        .card h2{font-family:'Playfair Display',serif;color:var(--primary);margin-bottom:1rem}
+        .card p{color:var(--text-light);margin-bottom:1rem;line-height:1.8}
+        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
+        footer{background:var(--primary);color:white;padding:3rem 2rem 1rem;margin-top:4rem}
+        .footer-content{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:2rem}
+        .footer-section h3{font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:1rem;color:var(--secondary)}
+        .footer-section p,.footer-section a{color:rgba(255,255,255,0.8);text-decoration:none;line-height:2;display:block}
+        .footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:1.5rem;text-align:center;color:rgba(255,255,255,0.6)}
+        .counter{display:inline-block;padding:0.5rem 1rem;background:rgba(255,255,255,0.1);border-radius:6px;margin:0 0.5rem;font-size:0.9rem}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><div class="logo-icon">ПЗ</div><span>ПроЗарплата</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="pricing.html">Цены</a></li>
+                <li><a href="catalog.html">Решения</a></li>
+                <li><a href="partners.html">Партнеры</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="sitemap.html">Карта сайта</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="page-header">
+        <h1>Работа в ПроЗарплата</h1>
+        <p>Присоединяйтесь к нашей команде профессионалов</p>
+    </div>
+    <div class="content">
+        <div class="card"><h2>Почему стоит работать у нас?</h2><ul style="list-style:none;padding:0"><li style="padding:0.5rem 0">✓ Конкурентная заработная плата</li><li style="padding:0.5rem 0">✓ Официальное трудоустройство</li><li style="padding:0.5rem 0">✓ Современный офис в центре города</li><li style="padding:0.5rem 0">✓ Гибкий график работы</li><li style="padding:0.5rem 0">✓ Корпоративное обучение</li><li style="padding:0.5rem 0">✓ Дружный коллектив</li></ul></div><div class="card"><h2>💻 Backend-разработчик (Python)</h2><p><strong>Требования:</strong></p><ul style="list-style:none;padding:0"><li>• Опыт разработки на Python от 2 лет</li><li>• Знание Django/Flask</li><li>• Опыт работы с PostgreSQL, SQLite</li><li>• Знание Git</li></ul><p><strong>Зарплата:</strong> от 100 000 ₽</p><p><strong>Контакт:</strong> hr@prozarplata.ru</p></div><div class="card"><h2>🎨 Frontend-разработчик</h2><p><strong>Требования:</strong></p><ul style="list-style:none;padding:0"><li>• Опыт работы с HTML, CSS, JavaScript</li><li>• Знание React или Vue.js</li><li>• Понимание UX/UI принципов</li></ul><p><strong>Зарплата:</strong> от 80 000 ₽</p><p><strong>Контакт:</strong> hr@prozarplata.ru</p></div><div class="card"><h2>📊 Бухгалтер-консультант</h2><p><strong>Требования:</strong></p><ul style="list-style:none;padding:0"><li>• Высшее образование (экономика, бухучет)</li><li>• Опыт работы бухгалтером от 3 лет</li><li>• Знание налогового законодательства РФ</li><li>• Опыт работы с 1С</li></ul><p><strong>Зарплата:</strong> от 70 000 ₽</p><p><strong>Контакт:</strong> hr@prozarplata.ru</p></div><div class="card"><h2>🎯 Менеджер по продажам</h2><p><strong>Требования:</strong></p><ul style="list-style:none;padding:0"><li>• Опыт продаж B2B от 1 года</li><li>• Коммуникабельность</li><li>• Нацеленность на результат</li></ul><p><strong>Зарплата:</strong> от 50 000 ₽ + % от продаж</p><p><strong>Контакт:</strong> hr@prozarplata.ru</p></div><div class="card"><h2>🛠️ Специалист технической поддержки</h2><p><strong>Требования:</strong></p><ul style="list-style:none;padding:0"><li>• Базовые знания IT</li><li>• Умение работать с людьми</li><li>• Готовность работать посменно</li></ul><p><strong>Зарплата:</strong> от 45 000 ₽</p><p><strong>Контакт:</strong> hr@prozarplata.ru</p></div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section"><h3>ПроЗарплата</h3><p>Профессиональная автоматизация учета оплаты труда.</p><p style="margin-top:1rem">© 2026 ООО "ПроЗарплата"</p></div>
+            <div class="footer-section"><h3>Навигация</h3><a href="index.html">Главная</a><a href="about.html">О компании</a><a href="services.html">Услуги</a><a href="pricing.html">Цены</a></div>
+            <div class="footer-section"><h3>Информация</h3><a href="catalog.html">Каталог решений</a><a href="partners.html">Партнеры</a><a href="vacancies.html">Вакансии</a><a href="sitemap.html">Карта сайта</a></div>
+            <div class="footer-section"><h3>Контакты</h3><p>📍 г. Ижевск, ул. Пушкинская, 123</p><p>📞 +7 (3412) 555-123</p><p>✉️ info@prozarplata.ru</p><p>🕒 Пн-Пт: 9:00 - 18:00</p></div>
+        </div>
+        <div class="footer-bottom"><p>Счетчики посещений: <span class="counter">Счетчик 1: 12,547</span><span class="counter">Счетчик 2: 12,548</span></p></div>
+    </footer>
+</body>
+</html>
